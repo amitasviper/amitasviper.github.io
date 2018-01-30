@@ -269,10 +269,10 @@
 
 #profile-img {
   border-radius: 10px;
-   content: url('/assets/profilebw.jpeg');
+   content: url('{{ site.baseurl }}/assets/profilebw.jpeg');
 }
 
 #profile-img:hover {
   border-radius: 10px;
-  content: url('/assets/profile.jpeg');
+  content: url('{{ site.baseurl }}/assets/profile.jpeg');
 }
