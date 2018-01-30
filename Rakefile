@@ -29,13 +29,14 @@ task :publish => [:generate] do
     Dir.chdir tmp
     system "git reset -q && git checkout -q . && git clean -dfq"
     system "git checkout master"
+    system "git pull origin master"
 
     cp_r "#{pwd}/_site/.", tmp
     system "git add ."
 
     message = "Site updated at #{Time.now.utc}"
     system "git commit -q -m #{message.inspect}"
-    system "git push -f origin master"
+    system "git push origin master"
 
     Dir.chdir pwd
   end
