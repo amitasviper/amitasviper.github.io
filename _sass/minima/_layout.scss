@@ -265,3 +265,14 @@
 .profile-img {
   border-radius: 10px;
 }
+
+
+#profile-img {
+  border-radius: 10px;
+   content: url("/assets/profilebw.jpeg");
+}
+
+#profile-img:hover {
+  border-radius: 10px;
+  content: url("/assets/profile.jpeg");
+}
