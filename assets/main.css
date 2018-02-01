@@ -364,10 +364,6 @@ table {
 
 #profile-img {
   border-radius: 10px;
-  content: url("http://amitasviper.com/assets/profilebw.jpeg"); }
-
-#profile-img:hover {
-  border-radius: 10px;
   content: url("http://amitasviper.com/assets/profile.jpeg"); }
 
 /**
