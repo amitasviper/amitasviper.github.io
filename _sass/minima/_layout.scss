@@ -256,6 +256,7 @@
 .sidebar {
   float: left;
   width: 20%;
+  margin-right: 2%;
 }
 
 .main-content {
@@ -270,4 +271,11 @@
 #profile-img {
   border-radius: 10px;
    content: url($baseurl + '/assets/profile.jpeg');
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .sidebar {
+        width: 100%;
+    }
 }
