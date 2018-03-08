@@ -1,6 +1,6 @@
 # amitasviper.com
 
-[Preview](https://jekyll.github.io/minima/)
+[Preview](http://amitasviper.com/)
 
 ![Screenshot](/screenshot.png)
 
