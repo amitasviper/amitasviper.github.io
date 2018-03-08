@@ -7,7 +7,7 @@
   <script type='text/javascript' src="{{ "/assets/prism.js" | relative_url }}"></script>
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% if jekyll.environment != 'production' and site.google_analytics %}
     {% include google-analytics.html %}
   {% endif %}
   <title> {{ site.title }} </title>
