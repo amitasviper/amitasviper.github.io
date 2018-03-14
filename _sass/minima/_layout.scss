@@ -253,11 +253,19 @@
   }
 }
 
-.sidebar {
+.left-sidebar {
   float: left;
   width: 20%;
   margin-right: 2%;
 }
+
+.right-sidebar {
+  float: right;
+  width: 20%;
+  margin-right: 2%;
+}
+
+
 
 .main-content {
   padding: 2%;
