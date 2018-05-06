@@ -1,5 +1,6 @@
 ---
 layout: post
+image: /assets/hadoop_docker/arch.png
 ---
 
 In this blog, I will be demonstating how to setup single node Hadoop cluster using Docker on Mac os X. Before actually
