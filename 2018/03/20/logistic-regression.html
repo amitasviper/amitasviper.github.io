@@ -7,16 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>About | Amit Kumar</title>
+<title>Logistic Regression | Amit Kumar</title>
 <meta name="generator" content="Jekyll v3.7.2" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Logistic Regression" />
 <meta name="author" content="Amit Kumar" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="https://amitasviper.github.io/about/" />
-<meta property="og:url" content="https://amitasviper.github.io/about/" />
+<meta name="description" content="Logistic regression is a simple classification algorithm. For example, it can be used to classify tweets with positive sentiments from the those with negative sentiments." />
+<meta property="og:description" content="Logistic regression is a simple classification algorithm. For example, it can be used to classify tweets with positive sentiments from the those with negative sentiments." />
+<link rel="canonical" href="https://amitasviper.github.io/2018/03/20/logistic-regression.html" />
+<meta property="og:url" content="https://amitasviper.github.io/2018/03/20/logistic-regression.html" />
 <meta property="og:site_name" content="Amit Kumar" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2018-03-20T00:00:00-07:00" />
 <script type="application/ld+json">
-{"name":"Amit Kumar","author":{"@type":"Person","name":"Amit Kumar"},"@type":"WebSite","url":"https://amitasviper.github.io/about/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://amitasviper.github.io/assets/profile.jpeg"},"name":"Amit Kumar"},"headline":"About","@context":"http://schema.org"}</script>
+{"description":"Logistic regression is a simple classification algorithm. For example, it can be used to classify tweets with positive sentiments from the those with negative sentiments.","author":{"@type":"Person","name":"Amit Kumar"},"@type":"BlogPosting","url":"https://amitasviper.github.io/2018/03/20/logistic-regression.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://amitasviper.github.io/assets/profile.jpeg"},"name":"Amit Kumar"},"headline":"Logistic Regression","dateModified":"2018-03-20T00:00:00-07:00","datePublished":"2018-03-20T00:00:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://amitasviper.github.io/2018/03/20/logistic-regression.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -173,17 +177,99 @@ if(!(window.doNotTrack === "1" || navigator.doNotTrack === "1" || navigator.doNo
 
 
         <div class="wrapper">
-          <article class="post">
+          <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Logistic Regression</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-03-20T00:00:00-07:00" itemprop="datePublished">
+        
+        Mar 20, 2018
+      </time>
+      </p>
   </header>
 
-  <div class="post-content">
-    <p>Amit Kumar is a Master’s Student in Data Science at the USC Viterbi School of Engineering and a Python enthusiast who likes to solve even the smallest problems by writing code. He received his Bachelor’s degree in Computer Science from India in 2016. He has two years of industry experience in building scalable backend systems using technologies like Python, ROR, Postgres, Elastic Search, Redis, RestApis, ReactJS etc. At his leisure, he likes to develop python applications, read reddit and machine learning articles.</p>
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Logistic regression is a simple classification algorithm. For example, it can be used to classify
+tweets with positive sentiments from the those with negative sentiments.</p>
+
+<p><img src="/assets/logistic_regression.jpeg" /></p>
+
+<p>Unlike normal regression problem, logistic regression does not output a discrete number to represent
+the class, instead the output of logistic regression is a valid probability that a given input belongs
+to a certain class.</p>
+
+<p>Some of the cases where logistic regression can be applied are:</p>
+<ul>
+	<li>Email spam filtering</li>
+	<li>Text sentiment analysis</li>
+	<li>Predict mortality in injured patients</li>
+	<li>Predict the risk of developing a given disease</li>
+	<li>Predict whether an American voter will vote Democratic or Republican, based on age, income, sex, race, state of residence, votes in previous elections</li>
+	<li>And several more applications...</li>
+</ul>
+
+<p>Logistic regression normally refers as classifying the input into one of the two target classes.</p>
+
+<p>In this blog we will discuss the Multinomial Logistic Regression (further in the blog we will refer using MLR). This is used when there are more than
+two output classes.</p>
+
+<p>Suppose we are doing text classification of sentiments of tweets into three categories namely positive,
+negative and neutral.</p>
+
+<blockquote>
+  <blockquote>
+    <p>classes = { positive, negative, neutral }</p>
+  </blockquote>
+</blockquote>
+
+<p>The MLR estimates the proability of an output class conditioned on the the input document by extracting
+some textual features from the text document and combining them linearly and then appying a function to
+this combination.</p>
+
+<p>These features are combined property of the input text document as well as the class of the document.</p>
+
+<p>So we can write a feature function as :</p>
+<blockquote>
+  <blockquote>
+    <p>f<sub>i</sub> (x, c)</p>
+  </blockquote>
+</blockquote>
+
+<p>where 
+<code class="highlighter-rouge">x</code> is the <code class="highlighter-rouge">input document given for classification</code> and <code class="highlighter-rouge">c</code> is the <code class="highlighter-rouge">class of the input document</code>.</p>
+
+<p>To estimate the probability of a certain class <code class="highlighter-rouge">c</code> given a document <code class="highlighter-rouge">x</code>, we use the following formula.</p>
+
+<p><img src="/assets/formula.png" /></p>
 
   </div>
 
+  
+    
+
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'https://amitasviper.github.io/2018/03/20/logistic-regression.html';
+      this.page.identifier = 'https://amitasviper.github.io/2018/03/20/logistic-regression.html';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+
+      s.src = 'https://amitasviper-com.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+  
+
+  <a class="u-url" href="/2018/03/20/logistic-regression.html" hidden></a>
 </article>
 
         </div>

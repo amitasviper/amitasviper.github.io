@@ -352,8 +352,13 @@ table {
       .post-content h4 {
         font-size: 18px; } }
 
-.sidebar {
+.left-sidebar {
   float: left;
+  width: 20%;
+  margin-right: 2%; }
+
+.right-sidebar {
+  float: right;
   width: 20%;
   margin-right: 2%; }
 
@@ -363,13 +368,22 @@ table {
 .profile-img {
   border-radius: 10px; }
 
+.img-post {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto; }
+
+.terminal-command {
+  color: silver;
+  background: black; }
+
 #profile-img {
   border-radius: 10px;
-  content: url("http://amitasviper.com/assets/profile.jpeg"); }
+  content: url("/assets/profile.jpeg"); }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .sidebar {
+  .left-sidebar {
     width: 100%; } }
 .post-content {
   text-align: justify; }
