@@ -1,6 +1,6 @@
 # amitasviper.com
 
-[Preview](http://amitasviper.com/)
+[Preview](https://amitasviper.github.io)
 
 ![Screenshot](/screenshot.png)
 
